@@ -1,9 +1,10 @@
-﻿using Data.Entities;
+﻿using Data.Contracts;
+using Data.Entities;
 using Models;
 
 namespace Data.Repositories
 {
-    public class TopicRepository
+    public class TopicRepository : ITopicRepository
     {
         private readonly MessageBoardContext _context;
 
